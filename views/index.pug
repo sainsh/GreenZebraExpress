@@ -1,0 +1,22 @@
+extends ../node_modules/jade-bootstrap/_bootstrap
+
+
+
+
+
+append body
+
+  .container
+    link(rel="stylesheet", href="../public/stylesheets/style.css")
+    include ./navbar
+    div#text(class="row")
+      div(class="col-2")
+      div(class="col-8")
+        h1= title
+        p Vores idé har til formål at fremme den innovative bæredygtige scene ved, at fremvise og italesætte nye innovative re-designs, af bæredygtige materialer. Dette vil vi gøre ved at afvikle forskellige pop-up workshops, som giver bæredygtige designere eksponering, samt fremmer den almene forbrugers forståelse, af arbejde med bæredygtighed i dagligdagen.
+      
+        form(action="/", method="post")
+          input(id="input" type="email", name="email")
+          br
+          input(class="tilmeldknap" type="submit", value="tilmeld")
+      div(class="col-2")
